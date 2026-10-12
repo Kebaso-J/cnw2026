@@ -1,0 +1,109 @@
+# CNW 2025 (1st edition). Content from the official program PDF.
+name: "CNW 2025"
+edition: "1st edition"
+dates: "December 15–19, 2025"
+hours: "09:00–16:00 EAT"
+program_pdf: "assets/docs/CNW2025-program.pdf"
+summary: "Five days of hands-on technical tutorials, paired with invited talks on brain mapping, stimulation, brain-computer interfaces, EEG machine learning, brain-scale modelling and neuromorphic computing."
+stats:
+  - { value: "5", label: "days" }
+  - { value: "10", label: "invited speakers" }
+
+# kind: talk (highlighted, has a speaker) | tutorial | break | event
+days:
+  - label: "Day 1"
+    date: "Monday, December 15"
+    sessions:
+      - { time: "09:00–10:00", kind: "event", title: "Workshop opening", speaker: "Dr Kebaso Sianyo", affil: "University of Nairobi" }
+      - { time: "10:00–12:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "12:00–14:00", kind: "break", title: "Lunch break" }
+      - { time: "14:00–15:00", kind: "talk", title: "Brain mapping", speaker: "Slobodan Tanackovic", affil: "g.tec medical engineering GmbH, Austria" }
+      - { time: "15:00–16:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "16:00–19:00", kind: "break", title: "Long break" }
+      - { time: "19:00–20:00", kind: "talk", title: "Neuroscience fireside chat", speaker: "Dr David Andai, MD, MSc", affil: "AKU Brain and Mind Institute" }
+  - label: "Day 2"
+    date: "Tuesday, December 16"
+    sessions:
+      - { time: "09:00–10:30", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "10:30–11:00", kind: "break", title: "Coffee break" }
+      - { time: "11:00–13:00", kind: "talk", title: "Brain stimulation", speaker: "Dr Ornella Dakwar", affil: "The Hebrew University of Jerusalem" }
+      - { time: "13:00–14:00", kind: "break", title: "Lunch break" }
+      - { time: "14:00–16:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "16:00–17:00", kind: "talk", title: "Neuroplasticity in action: harnessing the brain's adaptive potential in neurorehabilitation", speaker: "Dr Zainab, DPT, MS (Neuromuscular Rehabilitation)", affil: "Abu Dhabi" }
+      - { time: "20:00–22:00", kind: "event", title: "Daily recap (optional)", speaker: "Workshop Technical Team" }
+  - label: "Day 3"
+    date: "Wednesday, December 17"
+    sessions:
+      - { time: "09:00–10:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "10:00–11:00", kind: "talk", title: "IEEE EMBS (Engineering in Medicine and Biology Society)", speaker: "Jackson Mugwe", affil: "Biomedical Engineering, Kenyatta University" }
+      - { time: "11:00–11:30", kind: "break", title: "Coffee break" }
+      - { time: "11:30–12:30", kind: "talk", title: "A machine learning pipeline for EEG analysis", speaker: "Hadi Bagheri", affil: "Graduate researcher, University of Tabriz" }
+      - { time: "12:30–14:00", kind: "break", title: "Lunch break" }
+      - { time: "14:00–15:00", kind: "talk", title: "Epilepsy presentation", speaker: "Alan Tanui" }
+      - { time: "15:00–16:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "20:00–22:00", kind: "event", title: "Daily recap (optional)", speaker: "Workshop Technical Team" }
+  - label: "Day 4"
+    date: "Thursday, December 18"
+    sessions:
+      - { time: "09:00–10:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "10:00–12:00", kind: "talk", title: "Brain-computer interfaces: from neural biology to real-time clinical systems", speaker: "Prof Ravichander Janapati", affil: "SR University, Warangal, Telangana, India" }
+      - { time: "12:00–14:00", kind: "break", title: "Lunch break" }
+      - { time: "14:00–16:00", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "20:00–22:00", kind: "event", title: "Daily recap (optional)", speaker: "Workshop Technical Team" }
+  - label: "Day 5"
+    date: "Friday, December 19"
+    sessions:
+      - { time: "09:00–11:30", kind: "tutorial", title: "Technical tutorial", speaker: "Workshop Technical Team" }
+      - { time: "11:30–12:00", kind: "break", title: "Coffee break" }
+      - { time: "12:00–13:00", kind: "talk", title: "Why simulate the brain? The future of brain-scale models", speaker: "Prof Gaute Einevoll", affil: "Norwegian University of Life Sciences and University of Oslo" }
+      - { time: "13:00–14:00", kind: "break", title: "Lunch break" }
+      - { time: "14:00–15:00", kind: "talk", title: "Neuromorphic computing", speaker: "Fidel Makatia, HSC, MIEEE", affil: "Texas A&M University, USA" }
+      - { time: "15:00–16:00", kind: "event", title: "Closing ceremony", speaker: "Workshop Organizing Team" }
+
+speakers:
+  - name: "Dr Ornella Dakwar"
+    role: "Clinical neuroscientist"
+    photo: "assets/img/past/ornella-dakwar.jpg"
+    session: "Brain stimulation · Day 2"
+    bio: "Specializes in non-invasive (tRNS, tDCS) and invasive (DBS) brain stimulation, with a focus on the neural correlates of cognition and clinical symptoms. At InnoSphere and Alpha Omega Engineering she developed neuromodulation protocols and supported neurotechnology innovation. Earlier she was Deputy Head of the Child Development and Rehabilitation Department at the Israeli Ministry of Health (2013–2018), and has managed clinical trials and translational neuroscience research since 2017."
+  - name: "Prof Ravichander Janapati"
+    role: "Professor of Engineering, SR University, India"
+    photo: "assets/img/past/ravichander-janapati.jpg"
+    session: "Brain-computer interfaces · Day 4"
+    bio: "Professor in Electronics and Communication Engineering and Associate Dean of the School of Computer Science and Artificial Intelligence at SR University, Warangal, Telangana. His interests are brain-computer interfacing, biomedical signal processing, machine learning, artificial intelligence and wireless sensor networks."
+  - name: "Hadi Bagheri"
+    role: "Researcher in cognitive psychology"
+    photo: "assets/img/past/hadi-bagheri.jpg"
+    session: "ML pipeline for EEG analysis · Day 3"
+    bio: "Graduate researcher in Cognitive Psychology at the Faculty of Neuroscience, University of Tabriz, working on computational neuroscience and machine learning for brain signal analysis. He is investigating CNNs and support vector machines for decoding cognitive patterns from EEG, and is passionate about practical end-to-end AI workflows for seizure detection and BCI systems."
+  - name: "Dr David Andai, MD, MSc"
+    role: "AKU Brain and Mind Institute"
+    photo: "assets/img/past/david-andai.jpg"
+    session: "Fireside chat · Day 1"
+    bio: "A JKUAT graduate with an MPH in International Global Health, and a research assistant at the Brain and Mind Institute, Aga Khan University. Co-founder of Afiadata, a startup building health data science skills among medics. He works on ML/AI applications, imaging and wearable data analysis, with a particular interest in mental health and neuroscience research."
+  - name: "Slobodan Tanackovic"
+    role: "g.tec medical engineering GmbH"
+    photo: "assets/img/past/slobodan-tanackovic.jpg"
+    session: "Brain mapping · Day 1"
+    bio: "Engineering and clinical neurophysiology background, with training in electroencephalography and evoked potentials. He was part of the epilepsy surgery program at the University Hospital of Coimbra, Portugal, and has extensive experience in intra-operative neuromonitoring in Portugal and England. He joined g.tec medical engineering in 2018 and is a BCI and neuroscience enthusiast."
+  - name: "Fidel Makatia, HSC, MIEEE"
+    role: "Analog and mixed-signal IC design engineer"
+    photo: "assets/img/past/fidel-makatia.jpg"
+    session: "Neuromorphic computing · Day 5"
+    bio: "Graduate research assistant at Texas A&M University working across semiconductors, AI acceleration, system-on-chip design, high-speed interconnects and edge AI systems. Co-author of “A Short History of Circuits and Systems”, 2nd edition, and a 2020 United Nations Person of the Year Award recipient as principal inventor of the TibaVent ventilator."
+  - name: "Prof Gaute Einevoll"
+    role: "Professor of physics"
+    photo: "assets/img/past/gaute-einevoll.jpg"
+    session: "Brain-scale models · Day 5"
+    bio: "Professor of physics at the Norwegian University of Life Sciences and the University of Oslo, working on brain physics and computational neuroscience: physics-type modelling of nerve cells, networks, brain tissue, brain signals and brain stimulation. Co-author of “Electric Brain Signals” (Cambridge, 2024) and “Principles of Computational Modelling in Neuroscience”, 2nd ed. (Cambridge, 2023), and host of the Theoretical Neuroscience Podcast."
+
+partners_featured:
+  - { name: "g.tec medical engineering", logo: "assets/img/past/gtec.png" }
+  - { name: "IEEE Engineering in Medicine and Biology Society", logo: "assets/img/past/ieee-embs.png" }
+partners:
+  - { name: "AMSUN: Association of Medical Students of the University of Nairobi", logo: "assets/img/past/amsun.png" }
+  - { name: "Mount Kenya University Medical Students Association (MKUMSA)", logo: "assets/img/past/mkumsa.png" }
+  - { name: "IEEE EMBS Kenyatta University Student Branch", logo: "assets/img/past/ieee-embs-ku.png" }
+  - { name: "Computerized Neurotherapy Lab", logo: "assets/img/past/computerized-neurotherapy-lab.png" }
+  - { name: "Mastermind Medic's Solutions", logo: "assets/img/past/mastermind-medics.png" }
+  - { name: "Rastuc Labs", logo: "assets/img/past/rastuc-labs.png" }

@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<section class="hero">
+  {% include eeg.html %}
+  <div class="wrap hero__body">
+    <p class="eyebrow">{{ site.edition }} &middot; {{ site.format }} &middot; {{ site.dates_display }}</p>
+    <h1>Computational<br>Neuroscience<br>Workshop <span class="hero__year">{{ site.year }}</span></h1>
+    <p class="hero__lede">Two days online for researchers and engineers turning neural signals into models, devices and clinical tools. Hosted by {{ site.organizer }}.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{{ site.register_url }}">Register to attend</a>
+      <a class="btn btn--ghost" href="{{ site.cfp_url }}">Submit an abstract</a>
+    </div>
+    <p class="hero__meta">{{ site.timezone_note }}</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap grid-2">
+    <div>
+      <p class="eyebrow eyebrow--dark">About</p>
+      <h2>A working meeting for neurotech builders</h2>
+    </div>
+    <div class="prose">
+      <p>The Computational Neuroscience Workshop (CNW) brings together students and professionals from engineering and medicine to explore how the brain computes and how we can build technology around it.
+
+Over two full online days, participants will move from the fundamentals of neural modelling and signal analysis to machine learning for brain data and the hardware that makes wearable neurotechnology possible. Clinicians will see what engineering can offer, and engineers will see the clinical problems worth solving.
+
+Following the success of the first edition in December 2025, CNW 2026 is built around one idea:<b>The best neurotechnology is built by people who understand both sides.</b></p>
+      <dl class="facts">
+        <div><dt>Format</dt><dd>{{ site.format }}</dd></div>
+        <div><dt>Dates</dt><dd>{{ site.dates_display }}</dd></div>
+        <div><dt>Organizer</dt><dd>{{ site.organizer }}</dd></div>
+        <div><dt>Registration</dt><dd><a href="{{ site.register_url }}">Register here</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="topics">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark">Call for talks and posters</p>
+    <h2>Topics of interest</h2>
+    <div class="grid-2">
+      <ul class="topics">
+        {% for t in site.data.topics %}<li>{{ t }}</li>{% endfor %}
+      </ul>
+      <div class="panel">
+        <h3>How to contribute</h3>
+        <p>Send a short abstract describing your work. Accepted submissions are presented as talks or lightning talks in the live program.</p>
+        <ul class="deadlines">
+          <li><span>Abstract deadline</span><b>26th October 2026</b></li>
+          <li><span>Notification</span><b>2nd November 2026</b></li>
+          <li><span>Workshop</span><b>{{ site.dates_display }}</b></li>
+        </ul>
+        <a class="btn btn--primary" href="{{ site.cfp_url }}">Submit an abstract</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="speakers">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark">Speakers</p>
+    <h2>Invited speakers</h2>
+    <div class="cards">
+      {% for s in site.data.speakers %}
+      <article class="card">
+        <div class="card__avatar" aria-hidden="true">
+          {% if s.photo != "" %}<img src="{{ s.photo | relative_url }}" alt="">{% else %}{{ s.name | slice: 0 }}{% endif %}
+        </div>
+        <p class="card__status">{{ s.status }}</p>
+        <h3>{{ s.name }}</h3>
+        {% if s.affiliation != "" %}<p class="card__aff">{{ s.affiliation }}</p>{% endif %}
+        {% if s.talk != "" %}<p class="card__talk">{{ s.talk }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="program">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark">Program</p>
+    <h2>Two days, online</h2>
+    <p class="note">Detailed schedule to be updated. {{ site.timezone_note }}.</p>
+    <div class="days">
+      {% for d in site.data.program %}
+      <div class="day">
+        <header class="day__head"><span>{{ d.day }}</span><b>{{ d.date }}</b></header>
+        <ol class="sessions">
+          {% for s in d.sessions %}
+          <li><span class="sessions__time">{{ s.time }}</span><span class="sessions__title">{{ s.title }}</span><span class="sessions__kind">{{ s.kind }}</span></li>
+          {% endfor %}
+        </ol>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="committee">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark">Committee</p>
+    <h2>Organizers</h2>
+    <div class="committee">
+      {% for g in site.data.committee %}
+      <div>
+        <h3>{{ g.role }}</h3>
+        <ul>{% for p in g.people %}<li><b>{{ p.name }}</b>{% if p.affiliation %}<span>{{ p.affiliation }}</span>{% endif %}</li>{% endfor %}</ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="previous">
+  <div class="wrap grid-2">
+    <div>
+      <p class="eyebrow eyebrow--dark">Past edition</p>
+      <h2>The 1st edition</h2>
+    </div>
+    <div class="prose">
+       <p>Five days of hands-on tutorials and invited talks, 15–19 December 2025.</p>
+      <a class="btn btn--dark" href="{{ '/past-edition/' | relative_url }}">View the 1st edition</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Join us online</h2>
+    <p>{{ site.dates_display }} &middot; {{ site.format }}</p>
+    <a class="btn btn--primary" href="{{ site.register_url }}">Register to attend</a>
+  </div>
+</section>

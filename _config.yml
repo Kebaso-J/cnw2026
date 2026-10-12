@@ -1,0 +1,25 @@
+title: "Rastuc Labs Computational Neuroscience Workshop 2026"
+short_title: "CNW 2026"
+description: "The 2nd Computational Neuroscience Workshop, hosted virtually by Rastuc Labs: neural signal processing, brain-computer interfaces, and TinyML for the clinic."
+edition: "2nd Edition"
+year: 2026
+format: "Virtual"
+dates_display: "November 12–13, 2026"     
+timezone_note: "All times in East Africa Time (EAT, GMT+3)"
+
+# Update these once your repo exists
+url: "https://rastuctechnologies.com/cnw2026"  # the base hostname & protocol for your site
+baseurl: ""                              # "" for a user/org site; "/repo-name" for a project site
+
+organizer: "Rastuc Labs & Ghana Medical School"
+organizer_parent: "Rastuc Technologies Limited"
+organizer_location: "Nairobi, Kenya"
+contact_email: "info@rastuctechnologies.com"  
+register_url: "/register/"          
+cfp_url: "https://forms.gle/w6fLJ5oNjoKV5N4A7"                         
+first_edition_url: "#"                   # placeholder: link to the 1st edition page
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+exclude: [README.md, Gemfile, Gemfile.lock]

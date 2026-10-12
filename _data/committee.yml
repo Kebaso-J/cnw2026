@@ -1,0 +1,17 @@
+- role: "Workshop Chair"
+  people:
+    - name: "Jacob Kirera"
+      affiliation: "Director, Rastuc Labs"
+      location: "Nairobi, Kenya"
+- role: "Workshop Co-Chair"
+  people:
+    - name: "Peter Blessing"
+      affiliation: "Ghana Medical School, University of Ghana"
+- role: "Organizing Committee"
+  people:
+    - name: "Dula Dzidula"
+      affiliation: "Biomedical Engineer, University of Ghana"
+- role: "Volunteers"
+  people:
+    - name: "Volunteers"
+      affiliation: "Rastuc Labs & University of Ghana"
