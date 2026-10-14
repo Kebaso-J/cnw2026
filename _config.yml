@@ -8,10 +8,10 @@ dates_display: "November 12–13, 2026"
 timezone_note: "All times in East Africa Time (EAT, GMT+3)"
 
 # Update these once your repo exists
-url: "https://rastuctechnologies.com/cnw2026"  # the base hostname & protocol for your site
+url: "https://cnw2026.rastuctechnologies.com/"  # the base hostname & protocol for your site
 baseurl: ""                              # "" for a user/org site; "/repo-name" for a project site
 
-organizer: "Rastuc Labs & Ghana Medical School"
+organizer: "Rastuc Labs & University of Ghana Medical School"
 organizer_parent: "Rastuc Technologies Limited"
 organizer_location: "Nairobi, Kenya"
 contact_email: "info@rastuctechnologies.com"  
