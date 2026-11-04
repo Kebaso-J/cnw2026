@@ -12,7 +12,7 @@ url: "https://cnw2026.rastuctechnologies.com/"  # the base hostname & protocol f
 baseurl: ""                              # "" for a user/org site; "/repo-name" for a project site
 
 organizer: "Rastuc Labs & University of Ghana Medical Students' Association"
-organizer_parent: "Rastuc Technologies Limited"
+organizer_parent: "Rastuc Technologies"
 organizer_location: "Nairobi, Kenya"
 contact_email: "info@rastuctechnologies.com"  
 register_url: "/register/"          
