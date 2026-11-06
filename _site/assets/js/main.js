@@ -34,8 +34,8 @@ links.addEventListener('click', e => {
 });
 
 // Highlight current section in the nav
-const anchors = [...links.querySelectorAll('a[href^="#"]:not(.nav__cta)')];
-const map = new Map(anchors.map(a => [a.getAttribute('href').slice(1), a]));
+const anchors = [...links.querySelectorAll('a[href*="#"]:not(.nav__cta)')];
+const map = new Map(anchors.map(a => [a.getAttribute('href').split('#')[1], a]));
 const io = new IntersectionObserver(entries => {
   entries.forEach(en => {
     if (en.isIntersecting && map.has(en.target.id)) {

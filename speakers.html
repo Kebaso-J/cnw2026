@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Speakers — CNW 2026"
+permalink: /speakers/
+---
+
+<section class="page-head page-head--dark">
+  <div class="wrap">
+    <p class="eyebrow">Invited speakers</p>
+    <h1>Speakers</h1>
+    <p class="hero__lede">{{ site.short_title }} brings together clinicians, engineers and researchers from across the neurotech world. Here they are, with their talks.</p>
+    <a class="btn btn--ghost" href="{{ '/#speakers' | relative_url }}">&larr; Back to the program overview</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap profiles">
+    {% for s in site.data.speakers %}
+    <article class="profile{% cycle '', ' profile--alt' %}" id="{{ s.slug }}">
+      <div class="profile__media">
+        {% if s.photo != "" %}
+        <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy">
+        {% else %}
+        <div class="profile__initials" aria-hidden="true">{{ s.name | slice: 0 }}</div>
+        {% endif %}
+      </div>
+      <div class="profile__body">
+        <p class="card__status">{{ s.status }}</p>
+        <h2>{{ s.name }}</h2>
+        {% if s.affiliation != "" %}<p class="profile__aff">{{ s.affiliation }}</p>{% endif %}
+        {% if s.talk != "" %}
+        <div class="profile__talk">
+          <span>Talk</span>
+          <p>{{ s.talk }}</p>
+        </div>
+        {% endif %}
+        {% if s.bio %}
+        <div class="prose profile__bio">{{ s.bio | markdownify }}</div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Join us online</h2>
+    <p>{{ site.dates_display }} &middot; {{ site.format }}</p>
+    <a class="btn btn--primary" href="{{ site.register_url }}">Register to attend</a>
+  </div>
+</section>

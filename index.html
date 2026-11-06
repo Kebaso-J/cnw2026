@@ -68,15 +68,39 @@ Following the success of the first edition in December 2025, CNW 2026 is built a
       {% for s in site.data.speakers %}
       <article class="card">
         <div class="card__avatar" aria-hidden="true">
-          {% if s.photo != "" %}<img src="{{ s.photo | relative_url }}" alt="">{% else %}{{ s.name | slice: 0 }}{% endif %}
+          {% if s.photo != "" %}<img src="{{ s.photo | relative_url }}" alt="" loading="lazy">{% else %}{{ s.name | slice: 0 }}{% endif %}
         </div>
         <p class="card__status">{{ s.status }}</p>
         <h3>{{ s.name }}</h3>
         {% if s.affiliation != "" %}<p class="card__aff">{{ s.affiliation }}</p>{% endif %}
         {% if s.talk != "" %}<p class="card__talk">{{ s.talk }}</p>{% endif %}
+        <a class="card__link" href="{{ '/speakers/' | relative_url }}#{{ s.slug }}">Meet the speaker &rarr;<span class="sr-only">: {{ s.name }}</span></a>
       </article>
       {% endfor %}
     </div>
+    <p class="section__more"><a class="btn btn--dark" href="{{ '/speakers/' | relative_url }}">See all speaker profiles</a></p>
+  </div>
+</section>
+
+<section class="section" id="partners">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark">Partners</p>
+    <h2>In partnership with</h2>
+    <p class="note">Institutions and companies supporting CNW 2026.</p>
+  </div>
+  <div class="marquee" data-marquee>
+    <ul class="marquee__track">
+      {% for p in site.data.partners %}
+      <li class="marquee__item">
+        <img src="{{ p.logo | relative_url }}" alt="{{ p.name }}" loading="lazy">
+      </li>
+      {% endfor %}
+      {% for p in site.data.partners %}
+      <li class="marquee__item" aria-hidden="true">
+        <img src="{{ p.logo | relative_url }}" alt="" loading="lazy">
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
